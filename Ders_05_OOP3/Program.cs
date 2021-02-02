@@ -15,7 +15,6 @@ namespace Ders_05_OOP3
             List<ILoggerService> loggerServices = new List<ILoggerService>() { databaseLoggerService, fileLoggerService };
             BasvuruManager basvuruManager = new BasvuruManager();
             basvuruManager.BasvuruYap(konutKrediManager,loggerServices);
-
             List<IKrediManager> krediler = new List<IKrediManager>() {ihtiyacKrediManager,konutKrediManager };
            // basvuruManager.KrediOnBilgilendirmesiYap(krediler);
 
